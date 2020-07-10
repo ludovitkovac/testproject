@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+#search {
+	margin-top: 10px; /* outside */
+	margin-bottom: 10px; /* outside */
+	margin-left: 0px; /* outside */
+	margin-right: 0px; /* outside */
+	background-color: transparent;
+	display: block;
+	height: calc(1.5em + .75rem + 2px);
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #4D392F;
+	border: 1px solid #C996EB;
+	font-weight: bold;
+	border-radius: 5px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.button {
+	margin-top: 10px; /* outside */
+	margin-bottom: 10px; /* outside */
+	margin-left: 0px; /* outside */
+	margin-right: 0px; /* outside */
+	background-color: transparent;
+	display: block;
+	height: calc(1.5em + .75rem + 2px);
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	color: #4D392F;
+	border: 1px solid #C996EB;
+	border-radius: 5px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.ingredient-item {
+	margin: 1px; /* outside */
+	display: inline-block;
+	white-space: nowrap;
+	width: 160px;
+	height: 25px;
+	overflow: hidden; /* hide overflowing text */
+	text-overflow: ellipsis; /* show ... */
+	cursor: default;
+	border-radius: 5px;
+	color: #4D392F; /* font color */
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-weight: bold;
+}
+
+.lc-body {
+	background-image: url("pooja-chaudhary-5qHMH_coNwk-unsplash.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+	color: white;
+}
+
+.thText {
+	color: #4D392F;
+	font-size: 1.25em;
+}
+
+.resultItem {
+	color: #4D392F;
+	font-weight: bold;
+}
+
+/* unvisited link */
+a:link {
+  color: #4D392F;
+}
+
+/* visited link */
+a:visited {
+  color: #4D392F;
+}
+
+/* mouse over link */
+a:hover {
+  color: #4D392F;
+}
+
+/* selected link */
+a:active {
+  color: #4D392F;
+}

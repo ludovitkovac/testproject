@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sk" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Result</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="icon" type="image/png" href="16x16.png" sizes="16x16" />
+</head>
+<body class="lc-body">
+	<div class="container-fluid">
+		<div class="row h-25">&nbsp;</div>
+
+		<div class="row h-50">
+			<div class="col-1">&nbsp;</div>
+			<div class="col-10">
+				<table class="table">
+					<thead>
+						<tr>
+							<th class="thText">Name</th>
+							<th class="thText">Match</th>
+							<th class="thText">URL</th>
+							<th><button class="button" onclick="location.href='/ingredients'">Back</button></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr th:each="cocktailMatchModel : ${matches}">
+							<td class="resultItem"><span th:text="${cocktailMatchModel.cocktailName}"></span></td>
+							<td class="resultItem"><span th:text="${cocktailMatchModel.percentageMatch}"></span></td>
+							<td class="resultItem"><span><a th:href="${cocktailMatchModel.url}" target="_blank">Wikipedia link</a></span></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="col-1">&nbsp;</div>
+		</div>
+		<div class="row h-25">&nbsp;</div>
+		<div style="position: fixed; bottom: 0; right: 0;">
+			<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@threepointswheretwolinesmeet?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Pooja Chaudhary"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Pooja Chaudhary</span></a>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
